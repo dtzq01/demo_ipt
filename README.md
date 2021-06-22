@@ -33,7 +33,7 @@ iptables v1.8.6
 Demo target options:
   --set value   pass value(char[20]) to ko
 
-test@test:~/code/demo_ipt/ins_dir/sbin$ sudo ./iptables -t mangle -A POSTROUTING -d1.1.1.1 -j DEMO --set eth1
+test@test:~/code/demo_ipt/ins_dir/sbin$ sudo ./iptables -t mangle -A POSTROUTING -d192.168.248.1 -j DEMO --set eth1
 
 test@test:~/code/demo_ipt/ins_dir/sbin$ sudo ./iptables -t mangle -nvL
 Chain PREROUTING (policy ACCEPT 1903 packets, 1103K bytes)
