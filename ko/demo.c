@@ -12,8 +12,11 @@
 #include <linux/netfilter/x_tables.h>
 #include "demo.h"
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Jack Zhang <dtzq01@gmail.com>");
+MODULE_AUTHOR("XXX <XXX@XXX.com>");
 MODULE_DESCRIPTION("Demos: do what you like");
+struct xt_demo_tginfo2 {
+	char str[20];
+};
 
 static unsigned int
 demo_tg(struct sk_buff *skb, const struct xt_action_param *par)
