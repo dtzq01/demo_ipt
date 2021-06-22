@@ -1,8 +1,8 @@
-obj-m +=custom.o
+obj-m +=demo.o
 include $(PWD)/ko/Makefile
-custom-y := $(OBJS_CUSTOM)
+demo-y := $(OBJS_DEMO)
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules
+	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules -I"$(PWD)/ko"
 clean:
 	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) clean

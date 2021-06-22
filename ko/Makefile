@@ -1,2 +1,2 @@
-OBJS_TEMP_CUSTOM += custom.o
-OBJS_CUSTOM += $(patsubst %,ko/%, $(OBJS_TEMP_CUSTOM))
+OBJS_TEMP_DEMO += demo.o
+OBJS_DEMO += $(patsubst %,ko/%, $(OBJS_TEMP_DEMO))
